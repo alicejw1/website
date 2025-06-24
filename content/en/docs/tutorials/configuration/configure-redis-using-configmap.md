@@ -256,5 +256,7 @@ kubectl delete pod/redis configmap/example-redis-config
 
 ## {{% heading "whatsnext" %}}
 
-* Learn more about ConfigMaps and Pod configuration, see: [Configure a Pod](/docs/tasks/configure-pod-container/configure-pod-configmap/).
-* Learn more about how to update the configuration with a ConfigMap, see: [Update configuration with a ConfigMap](/docs/tutorials/configuration/updating-configuration-via-a-configmap/).
+* Learn about ConfigMaps mounted as a Volume. See: [Update a ConfigMap mounted as a Volume](/docs/tutorials/configuration/updating-configuration-via-a-configmap/#rollout-configmap-volume).
+* Learn about Pod environment variables. See: [Update Pod environment variables with a ConfigMap ](/docs/tutorials/configuration/updating-configuration-via-a-configmap/#rollout-configmap-env).
+* Learn about multi-container Pods. See: [Update ConfigMap configurations in a multi-container Pod](/docs/tutorials/configuration/updating-configuration-via-a-configmap/#rollout-configmap-multiple-containers).
+* Learn about sidecar containers in Pods. See: [Update configurations for a Pod with a sidecar container](/docs/tutorials/configuration/updating-configuration-via-a-configmap/#rollout-configmap-sidecar).
