@@ -47,7 +47,7 @@ data:
 EOF
 ```
 
-### Step 2: Add the Redis POD manifest 
+### Step 2: Add the Redis Pod manifest 
 
 You need to explicitly apply the updated config.yaml file and the Redis pod manifest using the 'kubectl' CLI. To do so, run the following command in a shell script:
 
@@ -63,7 +63,7 @@ After you apply the updated config and manifest YAML files, you should see sever
 * The data is now exposed inside the Pod in `data.redis-config` from the `example-redis-config`
 ConfigMap as `/redis-master/redis.conf`.
 
-The Redis POD YAML file should now look like this:
+The Redis Pod YAML file should now look like this:
 
 {{% code_sample file="pods/config/redis-pod.yaml" %}}
 
@@ -108,7 +108,7 @@ redis-config:
 
 ### Step 4: Verify the current configuration
 
-Run `kubectl exec` with the `redis-cli` tool to check the current configuration in the POD:
+Run `kubectl exec` with the `redis-cli` tool to check the current configuration in the Pod:
 
 ```shell
 kubectl exec -it redis -- redis-cli
