@@ -49,7 +49,7 @@ EOF
 
 ### Step 2: Add the Redis Pod manifest 
 
-You need to explicitly apply the updated config.yaml file and the Redis pod manifest using the 'kubectl' CLI. To do so, run the following command in a shell script:
+You need to explicitly apply the updated `config.yaml` file and the Redis pod manifest using the `kubectl` CLI. To do so, run the following command in a shell script:
 
 ```shell
 kubectl apply -f example-redis-config.yaml
@@ -69,7 +69,7 @@ The Redis Pod YAML file should now look like this:
 
 ### Step 3: Examine the created objects
 
-Run the following command to get and open the 'example-redis-config' ConfigMap:
+Run the following command to get and open the `example-redis-config` ConfigMap:
 
 ```shell
 kubectl get pod/redis configmap/example-redis-config 
@@ -85,7 +85,7 @@ NAME                             DATA   AGE
 configmap/example-redis-config   1      14s
 ```
 
-Run the following command to look at the 'example-redis-config' description:
+Run the following command to look at the `example-redis-config` description:
 
 ```shell
 kubectl describe configmap/example-redis-config
@@ -236,7 +236,7 @@ It should return the updated value `2097152`:
 2) "2097152"
 ```
 
-Look at the `maxmemory-policy` value that was updated. Run:
+Look at the `maxmemory-policy` value that was updated by running the following command:
 
 ```shell
 127.0.0.1:6379> CONFIG GET maxmemory-policy
